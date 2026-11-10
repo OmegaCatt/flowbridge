@@ -5,3 +5,5 @@
 Browser Playwright/Edge na Node 24.22.1: náhled bez zápisu, skutečné doručení, duplicitní událost a konflikt, po-zápisové 503 a dva pokusy s jedním novým CRM záznamem, detail podkladů a JSON, vadný e-mail bez replay, filtr chyb, replay 422, desktop 1440 a mobil 390 px bez JS chyb/přetečení. Snímky preview.png, detail.png, mobile.png vizuálně zkontrolované. Pozdější regrese zneplatňuje náhled při změně vstupu. Žádné externí API nebo skutečné CRM.
 
 Připravený CI workflow není sám důkaz vzdáleného úspěchu. Ověření konkrétního publikovaného commitu se doplní po doběhnutí Actions. Neověřujeme tím produkční kapacitu, obecné doručení právě jednou ani provozní SLA.
+
+Regrese zadržené skutečné HTTP odpovědi náhledu: uživatel mezitím změní JSON; starý náhled se nevrátí a UI výslovně upozorní, že výsledek patřil předchozímu vstupu.
