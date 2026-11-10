@@ -7,3 +7,7 @@ Browser Playwright/Edge na Node 24.22.1: náhled bez zápisu, skutečné doruče
 Připravený CI workflow není sám důkaz vzdáleného úspěchu. Ověření konkrétního publikovaného commitu se doplní po doběhnutí Actions. Neověřujeme tím produkční kapacitu, obecné doručení právě jednou ani provozní SLA.
 
 Regrese zadržené skutečné HTTP odpovědi náhledu: uživatel mezitím změní JSON; starý náhled se nevrátí a UI výslovně upozorní, že výsledek patřil předchozímu vstupu.
+
+## Ověřený vzdálený běh
+
+Kód 98cb68a prošel GitHub Actions na hlavní větvi: https://github.com/OmegaCatt/flowbridge/actions/runs/42729883848. Zahrnuje 13 Python testů, skutečné HTTP/regrese a browser QA; report se vztahuje k tomuto commitu.

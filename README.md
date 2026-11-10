@@ -41,6 +41,8 @@ JSON do 16 000 bajtů, přesně sedm textových polí (do 200 znaků); ID 1–80
 
 mode ovládá výhradně testovací závadu: normal, transient, rate_limit, reject, outage, after_commit. Nemění externí služby. URL cíle není vstupní pole a používá pouze vlastní loopback CRM. POST /api/preview neprovádí zápis; POST /api/events přijímá událost, GET /api/jobs a /api/job?id= ukazují stav, POST /api/replay obnoví oprávněný chybný běh. Každý server kontroluje Host/Origin; bez CORS a bez autentizace. API není určeno veřejnému provozu.
 
+[Ověřené CI kódu 98cb68a](https://github.com/OmegaCatt/flowbridge/actions/runs/42729883848) · [Zaznamenaný postup](https://omegacatt.github.io/datadesk/portfolio/) (statický snímek)
+
 ## Ověření
 
 ```powershell
