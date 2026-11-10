@@ -1,3 +1,12 @@
+# Opakované ověření 10. 11. 2026
+
+**13 Python testů prošlo.** Znovu spuštěné prohlížečové QA ověřilo skutečný pracovní postup na dočasných fiktivních podkladech, desktop i mobil a JavaScript chyby. Nová kontrola zopakovala běžné i připravené chybové toky. Původní počet testů zůstává beze změny.
+
+Ověřený předchozí commit 6cd6432: [GitHub Actions](https://github.com/OmegaCatt/flowbridge/actions/runs/42731084972); dostupnost jeho artefaktů byla ověřena. Aktuální revize dokumentace/oprav je kontrolována novým CI. Jeho přesný commit a výsledek jsou v hlavním Portfolio_PROGRESS.md. Staré věty o čekající publikaci v rozbaleném archivu platily jen pro dobu daného zápisu.
+
+<details>
+<summary>Historické výsledky, původní metriky a omezení</summary>
+
 # Ověření 10. 11. 2026
 
 13 Python unittestů prošlo na Pythonu 3.13.17: dvě skutečné HTTP služby a oddělené SQLite databáze; atomické přijetí pěti stejných událostí a jediný nárok; obnova po restartu; lease; přesné peníze; žádný zápis v náhledu; retry 503/429; 422 a validace; vyčerpání tří pokusů; dva ruční replay cykly; cílový konflikt a nezdvojený zápis po selhání potvrzení.
@@ -11,3 +20,6 @@ Regrese zadržené skutečné HTTP odpovědi náhledu: uživatel mezitím změn�
 ## Ověřený vzdálený běh
 
 Kód 98cb68a prošel GitHub Actions na hlavní větvi: https://github.com/OmegaCatt/flowbridge/actions/runs/42729883848. Zahrnuje 13 Python testů, skutečné HTTP/regrese a browser QA; report se vztahuje k tomuto commitu.
+
+
+</details>
