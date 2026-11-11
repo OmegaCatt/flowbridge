@@ -1,5 +1,12 @@
 # FlowBridge
 
+## Orientace v aplikaci (11. 11. 2026)
+
+Při první návštěvě se otevře stručný návod. Po zavření si aplikace v tomto prohlížeči zapamatuje potvrzení; změna nemá vliv na obchodní data. V hlavičce lze kdykoli otevřít **Jak aplikaci používat** a **Technické informace**. Oba obsahy odkazují na úplný README zde na GitHubu. Pokud úložiště prohlížeče není dostupné, návod lze zavřít a aplikace dál funguje.
+
+Doplněná úvodní nápověda a stručné technické vysvětlení v hlavičce. Integrační engine této UI etapy se nemění.
+
+
 **Od fiktivní objednávky k potvrzenému zápisu v CRM.** Místní integrační fronta ukazuje validaci, normalizaci, HTTP přenos, opakování po výpadku, idempotenci a řešení chyb.
 
 ![Pracovní přehled](docs/preview.png)
@@ -62,6 +69,9 @@ Začít schválenou testovací smlouvou dat a skutečným sandboxem CRM. Přidat
 Limit je 1 000 běhů a nejvýše 100 zobrazených položek po filtrování. Data se lokálně uchovávají i po restartu a nemají automatickou retenci. Ukázka nemá přihlášení, firemní oprávnění, produkční SLA ani reálný CRM konektor. AI zde není potřebná: transport, validace a opakování mají mít předvídatelné chování.
 
 ## English
+
+First-time visitors see a keyboard-accessible guide; persistent header buttons reopen usage and technical information with a link to this README. Acknowledgement is browser-local and does not store business records. First-visit guidance and header technical help were added. This UI stage does not change the integration engine.
+
 
 A fictional order webhook → validation/normalization → durable SQLite queue → actual HTTP request to a separate local mock CRM. Python 3.13 standard library, two loopback services/databases, plain HTML/CSS/JS. No credentials, AI or external company integration.
 

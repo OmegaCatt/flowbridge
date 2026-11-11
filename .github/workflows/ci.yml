@@ -30,5 +30,7 @@ jobs:
         if: always()
         with:
           name: flowbridge-qa
-          path: docs/*.png
+          path: |
+            docs/*.png
+            docs/guide*.png
           retention-days: 7

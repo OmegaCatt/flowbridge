@@ -39,7 +39,7 @@ class Handler(BaseHTTPRequestHandler):
         if url.path=='/api/summary':
             with connection(self.server.crm_database) as database:count=database.execute('SELECT COUNT(*) FROM crm_records').fetchone()[0]
             return self.send(200,{'jobs':len(queue.jobs()),'crmRecords':count,'fictional':True})
-        files={'/':('index.html','text/html; charset=utf-8'),'/app.js':('app.js','text/javascript; charset=utf-8'),'/style.css':('style.css','text/css; charset=utf-8')}
+        files={'/guide.js':('guide.js','text/javascript; charset=utf-8'),'/guide.css':('guide.css','text/css; charset=utf-8'),'/':('index.html','text/html; charset=utf-8'),'/app.js':('app.js','text/javascript; charset=utf-8'),'/style.css':('style.css','text/css; charset=utf-8')}
         if url.path not in files:return self.send(404,{'error':'Nenalezeno.'})
         name,mime=files[url.path];return self.send(200,(ROOT/'web'/name).read_bytes(),mime)
     def do_POST(self):

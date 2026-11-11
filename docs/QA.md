@@ -1,3 +1,13 @@
+# UX-1 až UX-7 – 11. 11. 2026
+
+První společný paralelní browser běh jednou překročil 30 s při čekání na tabulku. Dva následující samostatné běhy se zachycením skutečného HTTP přijetí prošly. Byla doplněná diagnostika QA; integrační engine nebyl v této etapě měněný.
+
+Místně ověřené unit testy: **13 Python**.
+
+Doplněná úvodní nápověda a stručné technické vysvětlení v hlavičce. Integrační engine této UI etapy se nemění.
+
+Všech sedm aplikací má první přístupný dialog a stálé ovládání nápovědy v hlavičce. Playwright ověřuje skutečný první vstup, obě části, GitHub odkaz, Tab/Shift+Tab, Escape, návrat fokusu, potvrzení po reloadu a mobil. CompanyAtlas čeká s přihlášením na zavření úvodu; hlavička se testuje po přihlášení. Legacy pracovní průchody pokračují po skutečném zavření úvodu. Aktuální commit, CI a přesný rozsah ověření této etapy jsou vedené v hlavním Portfolio_PROGRESS.md; starší zápisy níže jsou historické.
+
 # Opakované ověření 10. 11. 2026
 
 **13 Python testů prošlo.** Znovu spuštěné prohlížečové QA ověřilo skutečný pracovní postup na dočasných fiktivních podkladech, desktop i mobil a JavaScript chyby. Nová kontrola zopakovala běžné i připravené chybové toky. Původní počet testů zůstává beze změny.
