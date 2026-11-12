@@ -1,5 +1,38 @@
 # FlowBridge
 
+## Rychlá ukázka pro zájemce a HR
+
+Přenese fiktivní objednávku do testovacího CRM, bezpečně řeší opakování a ukáže historii pokusů.
+
+**[Prohlédnout veřejnou ukázku](https://omegacatt.github.io/datadesk/portfolio/#flowbridge)** - bez instalace a přihlášení.
+
+Veřejný odkaz ukazuje uložený snímek výsledků. Plnou aplikaci si spustíte na počítači podle návodu níže.
+
+## Spuštění krok za krokem (Windows)
+
+1. Nainstalujte **Python 3.13 nebo novější** z oficiálního webu [Python](https://www.python.org/downloads/windows/). Potom zavřete a znovu otevřete Terminál, pokud už běžel.
+2. Nahoře na této stránce GitHubu klikněte na zelené **Code** a potom **Download ZIP**.
+3. Stažený ZIP rozbalte: pravým tlačítkem → **Extrahovat vše**. Otevřete rozbalenou složku `flowbridge-main`. Pokud je uvnitř ještě jedna stejně pojmenovaná složka, otevřete i ji; musíte vidět soubor `server.py`.
+4. Otevřete v této složce **Terminál**. Jednoduchá cesta: v horním adresním řádku Průzkumníka napište `powershell` a stiskněte **Enter**. Otevře se příkazové okno přímo v této složce.
+
+Napište tento příkaz a stiskněte **Enter**:
+
+```powershell
+py -3 server.py
+```
+
+Terminál **nechte otevřený**. To, že příkaz dál běží a nevrací se nový řádek pro psaní, je v pořádku. V prohlížeči otevřete:
+
+**[http://127.0.0.1:4196](http://127.0.0.1:4196)**
+
+Adresa vede jen do vašeho počítače. Aplikace používá připravená **fiktivní data**. U připraveného scénáře nejdřív otevřete náhled a pak odešlete událost. Po dokončení ji odešlete znovu: počet záznamů v CRM se nemá zvýšit. Další scénář ukáže ztracené potvrzení a opakování. CRM je druhá místní ukázková služba, nikoli připojená firemní aplikace.
+
+**Vypnutí:** vraťte se do Terminálu a stiskněte **Ctrl+C**. Pro příští spuštění znovu otevřete Terminál ve stejné složce a napište už jen spouštěcí příkaz výše.
+
+Pokud se objeví chyba, otevřete [řešení běžných potíží a další možnosti](docs/SPUSTENI.md). Vývojové testy ani znalost programování nejsou podmínkou pro prohlédnutí veřejné ukázky.
+
+---
+
 ## Orientace v aplikaci (11. 11. 2026)
 
 Při první návštěvě se otevře stručný návod. Po zavření si aplikace v tomto prohlížeči zapamatuje potvrzení; změna nemá vliv na obchodní data. V hlavičce lze kdykoli otevřít **Jak aplikaci používat** a **Technické informace**. Oba obsahy odkazují na úplný README zde na GitHubu. Pokud úložiště prohlížeče není dostupné, návod lze zavřít a aplikace dál funguje.
