@@ -1,0 +1,13 @@
+import {record,pythonServer} from './recording.mjs';import {fileURLToPath} from 'node:url';import assert from 'node:assert/strict';
+const root=fileURLToPath(new URL('../',import.meta.url));
+await record({root,slug:'flowbridge',start:temp=>pythonServer(root,temp,'FLOWBRIDGE_PYTHON','import sys,runpy;sys.argv=["server.py","--port","0","--crm-port","0","--data",sys.argv[1]];runpy.run_path("server.py",run_name="__main__")',[temp]),walk:async({p,cue,hold,ui})=>{
+  await cue('Fiktivní objednávka se převede do jednotného tvaru. Samotný náhled nic neodešle.');await ui.click(p.locator('#preview'));await p.waitForFunction(()=>document.querySelector('#preview-result').textContent.includes('123450'));assert.equal(await p.locator('#crm-count').innerText(),'0');await hold(4);
+  await cue('Objednávku přijmeme do fronty a odešleme do testovacího CRM.');await ui.click(p.locator('#enqueue'));await p.waitForFunction(()=>document.querySelector('#jobs').textContent.includes('Dokončeno'));assert.equal(await p.locator('#crm-count').innerText(),'1');
+  await cue('Proběhl skutečný HTTP přenos mezi dvěma místními službami. CRM má jeden záznam.');await p.locator('#jobs').scrollIntoViewIfNeeded();await hold(4);
+  await cue('Odešleme znovu stejnou událost.');await hold(1.2);await ui.click(p.locator('#enqueue'));await p.waitForFunction(()=>document.querySelector('#message').textContent.includes('existující'));assert.equal(await p.locator('#count').innerText(),'1');assert.equal(await p.locator('#crm-count').innerText(),'1');
+  await cue('Stejná událost podruhé nevytvoří duplicitní záznam.');await hold(4);
+  await cue('Teď vyzkoušíme ztracené potvrzení po zápisu do CRM.');await ui.select(p.locator('#scenario'), 'after_commit');await ui.click(p.locator('#load'));await ui.click(p.locator('#enqueue'));await p.waitForFunction(()=>[...document.querySelectorAll('#jobs tr')].some(r=>r.textContent.includes('demo-after_commit')&&r.textContent.includes('Dokončeno')));assert.equal(await p.locator('#crm-count').innerText(),'2');
+  await cue('Otevřeme podrobnosti dokončeného běhu.');await hold(1.2);await ui.click(p.locator('#jobs tr').filter({hasText:'demo-after_commit'}).getByRole('button',{name:'Detail',exact:true}));await p.locator('#timeline li').first().waitFor();assert.match(await p.locator('#detail-status').innerText(),/pokusů 2/);assert.match(await p.locator('#timeline').innerText(),/HTTP 503/);
+  await cue('Ztracené potvrzení vyvolá druhý pokus. Časová osa ukazuje HTTP 503 a obnovu bez dalšího zápisu.');await p.locator('#detail').scrollIntoViewIfNeeded();await hold(5);
+  return {previewWrites:0,firstEventCrmCount:1,duplicateCrmCount:1,afterLostConfirmationCrmCount:2,lostConfirmationAttempts:2};
+}});

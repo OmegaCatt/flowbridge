@@ -1,0 +1,160 @@
+{
+  "recordedAt": "2026-11-16T15:07:44.436Z",
+  "sourceCommit": "71ef9e816f1b3c8c50c3cb03e296c5e601634fc7",
+  "scriptSha256": "4a96ad5a5bcedf1512b1698b4033b1849eae876736d182032cf4cb3bf79a2b4a",
+  "helperSha256": "965b860d9ec7fb3d2a26c516544bc6e5d8cc331be3bd5de702eaed7b93dc1396",
+  "videoSha256": "592985d3a4edc00a21e09068d45eab88c15a3d5f37779532074266ffe40117c7",
+  "mode": "actual isolated local HTTP/browser; fictional data; AI disabled; silent Full HD app-only recording",
+  "presentation": {
+    "width": 1920,
+    "height": 1080,
+    "captionFontPixels": 42,
+    "burnedInCaptions": true,
+    "visiblePointer": true,
+    "actualClickMarkers": true,
+    "audio": false,
+    "trimStartSeconds": 0.6,
+    "renderedOverlay": {
+      "topLayer": true,
+      "pointer": true,
+      "fontSize": "42px",
+      "pointerSvg": {
+        "width": 36,
+        "height": 42,
+        "fill": "rgb(255, 255, 255)",
+        "stroke": "rgb(17, 24, 32)"
+      },
+      "clickMarker": {
+        "width": 68,
+        "height": 68,
+        "border": 4,
+        "color": "rgb(216, 136, 24)"
+      }
+    }
+  },
+  "verified": {
+    "previewWrites": 0,
+    "firstEventCrmCount": 1,
+    "duplicateCrmCount": 1,
+    "afterLostConfirmationCrmCount": 2,
+    "lostConfirmationAttempts": 2,
+    "jsErrors": []
+  },
+  "captions": [
+    {
+      "start": 1.055,
+      "text": "FlowBridge: přenos objednávek do testovacího CRM.",
+      "end": 4.563
+    },
+    {
+      "start": 4.563,
+      "text": "Fiktivní objednávka se převede do jednotného tvaru. Samotný náhled nic neodešle.",
+      "end": 10.68
+    },
+    {
+      "start": 10.68,
+      "text": "Objednávku přijmeme do fronty a odešleme do testovacího CRM.",
+      "end": 13.002
+    },
+    {
+      "start": 13.002,
+      "text": "Proběhl skutečný HTTP přenos mezi dvěma místními službami. CRM má jeden záznam.",
+      "end": 17.071
+    },
+    {
+      "start": 17.071,
+      "text": "Odešleme znovu stejnou událost.",
+      "end": 20.282
+    },
+    {
+      "start": 20.282,
+      "text": "Stejná událost podruhé nevytvoří duplicitní záznam.",
+      "end": 24.29
+    },
+    {
+      "start": 24.29,
+      "text": "Teď vyzkoušíme ztracené potvrzení po zápisu do CRM.",
+      "end": 33.183
+    },
+    {
+      "start": 33.183,
+      "text": "Otevřeme podrobnosti dokončeného běhu.",
+      "end": 36.405
+    },
+    {
+      "start": 36.405,
+      "text": "Ztracené potvrzení vyvolá druhý pokus. Časová osa ukazuje HTTP 503 a obnovu bez dalšího zápisu.",
+      "end": 41.549
+    },
+    {
+      "start": 41.549,
+      "text": "Podrobný návod ke spuštění najdete v README projektu.",
+      "end": 45.554
+    }
+  ],
+  "actions": [
+    {
+      "kind": "click",
+      "target": "preview",
+      "x": 360.390625,
+      "y": 848.40625,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 5.871
+    },
+    {
+      "kind": "click",
+      "target": "enqueue",
+      "x": 501.546875,
+      "y": 612.40625,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 11.943
+    },
+    {
+      "kind": "click",
+      "target": "enqueue",
+      "x": 501.546875,
+      "y": 740.40625,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 19.485
+    },
+    {
+      "kind": "select",
+      "target": "scenario",
+      "x": 566.25,
+      "y": 539.921875,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 25.554
+    },
+    {
+      "kind": "click",
+      "target": "load",
+      "x": 359.7265625,
+      "y": 539.546875,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 27.479
+    },
+    {
+      "kind": "click",
+      "target": "enqueue",
+      "x": 501.546875,
+      "y": 848.40625,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 29.509
+    },
+    {
+      "kind": "click",
+      "target": "Detail",
+      "x": 1502.0625,
+      "y": 540.390625,
+      "captionPosition": "bottom",
+      "captionOverlapsTarget": false,
+      "at": 35.608
+    }
+  ]
+}

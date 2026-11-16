@@ -4,6 +4,14 @@
 
 Přenese fiktivní objednávku do testovacího CRM, bezpečně řeší opakování a ukáže historii pokusů.
 
+### Video ukázka
+
+**[Přehrát video — 0:46, bez zvuku](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4)** · [Co ukázka předvádí](docs/VIDEO.md)
+
+<a href="https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4"><img src="docs/videos/flowbridge-poster.png" alt="Přehrát video aplikace FlowBridge" width="720"></a>
+
+Skutečný průchod aplikací s českými titulky a viditelnou myší. Klikněte na náhled nebo odkaz nad ním; není potřeba nic instalovat. [Soubor MP4 na GitHubu](https://github.com/OmegaCatt/flowbridge/blob/main/docs/videos/flowbridge.mp4).
+
 **[Prohlédnout veřejnou ukázku](https://omegacatt.github.io/datadesk/portfolio/#flowbridge)** - bez instalace a přihlášení.
 
 Veřejný odkaz ukazuje uložený snímek výsledků. Plnou aplikaci si spustíte na počítači podle návodu níže.
