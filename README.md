@@ -6,11 +6,11 @@ Přenese fiktivní objednávku do testovacího CRM, bezpečně řeší opakován
 
 ### Video ukázka
 
-**[Přehrát video — 0:46, bez zvuku](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4)** · [Co ukázka předvádí](docs/VIDEO.md)
+**[Stáhnout video MP4 — 0:46, bez zvuku](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4)** · [Co ukázka předvádí](docs/VIDEO.md)
 
-<a href="https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4"><img src="docs/videos/flowbridge-poster.png" alt="Přehrát video aplikace FlowBridge" width="720"></a>
+<a href="https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4"><img src="docs/videos/flowbridge-poster.png" alt="Stáhnout video aplikace FlowBridge" width="720"></a>
 
-Skutečný průchod aplikací s českými titulky a viditelnou myší. Klikněte na náhled nebo odkaz nad ním; není potřeba nic instalovat. [Soubor MP4 na GitHubu](https://github.com/OmegaCatt/flowbridge/blob/main/docs/videos/flowbridge.mp4).
+Skutečný průchod aplikací s českými titulky a viditelnou myší. Kliknutím na náhled stáhnete video MP4; po stažení jej otevřete v běžném přehrávači videa. Samotnou aplikaci není potřeba instalovat. [Soubor MP4 na GitHubu](https://github.com/OmegaCatt/flowbridge/blob/main/docs/videos/flowbridge.mp4).
 
 **[Prohlédnout veřejnou ukázku](https://omegacatt.github.io/datadesk/portfolio/#flowbridge)** - bez instalace a přihlášení.
 

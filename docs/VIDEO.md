@@ -1,6 +1,6 @@
 # FlowBridge: video ukázka
 
-**[Přehrát MP4 — 0:46, bez zvuku](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4)** · [Soubor na GitHubu](https://github.com/OmegaCatt/flowbridge/blob/main/docs/videos/flowbridge.mp4)
+**[Stáhnout MP4 — 0:46, bez zvuku](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4)** · [Soubor na GitHubu](https://github.com/OmegaCatt/flowbridge/blob/main/docs/videos/flowbridge.mp4)
 
 HTTP přenos do testovacího CRM, ochrana před duplicitou a opakování po chybě potvrzení.
 
@@ -12,7 +12,7 @@ HTTP přenos do testovacího CRM, ochrana před duplicitou a opakování po chyb
 
 Video zachycuje skutečnou aplikaci nad izolovanými fiktivními daty. Má rozlišení **1920 × 1080**, **25 snímků/s**, přibližně **2.7 MB** a české titulky přímo v obrazu. Pohyb myši i kliknutí jsou viditelné. **Neobsahuje zvukovou stopu.**
 
-Ukázka nepotřebuje instalaci aplikace. Pro vlastní vyzkoušení pokračujte [návodem ke spuštění](../README.md#spuštění-krok-za-krokem-windows).
+Odkaz stáhne video MP4. Po stažení jej otevřete v běžném přehrávači videa. Ukázka nepotřebuje instalaci aplikace. Pro vlastní vyzkoušení pokračujte [návodem ke spuštění](../README.md#spuštění-krok-za-krokem-windows).
 
 ## Jak byl záznam ověřen
 
@@ -24,4 +24,4 @@ Scénář: [scripts/record-demo.mjs](../scripts/record-demo.mjs). Nahrávací vr
 
 ## English
 
-**[Watch the silent Full HD demo (0:46)](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4).** Czech captions are burned into the image; the pointer and actual clicks are visible. Recorded from the real application using isolated fictional data, with result assertions and no AI API calls. Full decoding, playback, seeking and absence of audio were verified. [Run the application locally](../README.md#spuštění-krok-za-krokem-windows).
+**[Download the silent Full HD demo (0:46)](https://raw.githubusercontent.com/OmegaCatt/flowbridge/main/docs/videos/flowbridge.mp4).** Open the downloaded MP4 in a standard video player. Czech captions are burned into the image; the pointer and actual clicks are visible. Recorded from the real application using isolated fictional data, with result assertions and no AI API calls. Full decoding, playback, seeking and absence of audio were verified. [Run the application locally](../README.md#spuštění-krok-za-krokem-windows).
