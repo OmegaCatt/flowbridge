@@ -12,9 +12,7 @@ Přenese fiktivní objednávku do testovacího CRM, bezpečně řeší opakován
 
 Skutečný průchod aplikací s českými titulky a viditelnou myší. Kliknutím na náhled stáhnete video MP4; po stažení jej otevřete v běžném přehrávači videa. Samotnou aplikaci není potřeba instalovat. [Soubor MP4 na GitHubu](https://github.com/OmegaCatt/flowbridge/blob/main/docs/videos/flowbridge.mp4).
 
-**[Prohlédnout veřejnou ukázku](https://omegacatt.github.io/datadesk/portfolio/#flowbridge)** - bez instalace a přihlášení.
-
-Veřejný odkaz ukazuje uložený snímek výsledků. Plnou aplikaci si spustíte na počítači podle návodu níže.
+Plnou aplikaci si můžete vyzkoušet po místním spuštění podle návodu níže; online živá verze není dostupná.
 
 ## Spuštění krok za krokem (Windows)
 
@@ -89,7 +87,7 @@ JSON do 16 000 bajtů, přesně sedm textových polí (do 200 znaků); ID 1–80
 
 mode ovládá výhradně testovací závadu: normal, transient, rate_limit, reject, outage, after_commit. Nemění externí služby. URL cíle není vstupní pole a používá pouze vlastní loopback CRM. POST /api/preview neprovádí zápis; POST /api/events přijímá událost, GET /api/jobs a /api/job?id= ukazují stav, POST /api/replay obnoví oprávněný chybný běh. Každý server kontroluje Host/Origin; bez CORS a bez autentizace. API není určeno veřejnému provozu.
 
-[Ověřené CI kódu 98cb68a](https://github.com/OmegaCatt/flowbridge/actions/runs/42729883848) · [Zaznamenaný postup](https://omegacatt.github.io/datadesk/portfolio/) (statický snímek)
+[Ověřené CI kódu 98cb68a](https://github.com/OmegaCatt/flowbridge/actions/runs/42729883848)
 
 ## Ověření
 
